@@ -3,7 +3,7 @@ import type { AstroUserConfig } from "astro/config";
 import tailwind from "@astrojs/tailwind";
 import sitemap from "@astrojs/sitemap";
 import robotsTxt from "astro-robots-txt";
-import cloudflare from "@astrojs/cloudflare";
+import vercel from "@astrojs/vercel/serverless";
 import react from "@astrojs/react";
 import markdoc from "@astrojs/markdoc";
 import keystatic from "@keystatic/astro";
@@ -17,7 +17,7 @@ const config: AstroUserConfig = defineConfig({
 		}),
 		sitemap(),
 		robotsTxt(),
-		cloudflare(),
+		vercel(),
 		react(),
 		markdoc(),
 		keystatic(),
