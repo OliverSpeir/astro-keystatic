@@ -7,9 +7,9 @@ import vercel from "@astrojs/vercel/serverless";
 import react from "@astrojs/react";
 import markdoc from "@astrojs/markdoc";
 import keystatic from "@keystatic/astro";
-
+import metaTags from "astro-meta-tags";
 const config: AstroUserConfig = defineConfig({
-	site: "http://www.example.com",
+	site: "https://astro-keystatic-test.vercel.app",
 	output: "hybrid",
 	integrations: [
 		tailwind({
@@ -21,6 +21,7 @@ const config: AstroUserConfig = defineConfig({
 		react(),
 		markdoc(),
 		keystatic(),
+		metaTags(),
 	],
 });
 

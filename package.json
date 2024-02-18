@@ -22,6 +22,7 @@
 		"@types/react": "^18.2.45",
 		"@types/react-dom": "^18.2.18",
 		"astro": "^4.0.5",
+		"astro-meta-tags": "^0.2.1",
 		"install": "^0.13.0",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0"
@@ -43,7 +44,7 @@
 		"prettier": "^3.1.1",
 		"prettier-plugin-astro": "^0.12.2",
 		"prettier-plugin-tailwindcss": "^0.5.9",
-		"sharp": "^0.33.0",
+		"sharp": "^0.32.6",
 		"tailwindcss": "^3.3.6",
 		"typescript": "^5.3.3"
 	}

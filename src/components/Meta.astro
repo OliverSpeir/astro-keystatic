@@ -8,7 +8,7 @@ type Props = {
 	post: CollectionEntry<"blog"> | undefined;
 };
 
-const defaultOg = "/social-preview.png";
+const defaultOg = "social-preview.png";
 const { title, description, ogImage, post } = Astro.props;
 const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 ---
@@ -39,9 +39,9 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
 <meta property="og:description" content={description} />
 <meta property="og:site_name" content="" />
 <meta property="og:url" content={canonicalURL} />
-{!ogImage && <meta property="og:image" content={Astro.site + defaultOg} />}
+{!ogImage && !post && <meta property="og:image" content={Astro.site + defaultOg} />}
 {ogImage && !post && <meta property="og:image" content={Astro.site + ogImage} />}
-{ogImage && post && <meta property="og:image" content={Astro.site + post.data.ogImage.src} />}
+{!ogImage && post && <meta property="og:image" content={post.data.ogImage.src} />}
 <meta property="og:image:alt" content={title} />
 
 <meta name="twitter:card" content="summary_large_image" />
