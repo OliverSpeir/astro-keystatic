@@ -1,3 +1,7 @@
-# Keystatic Starter for Astro
+# Keystatic Astro Markdoc POC
 
-- uses my [astro-starter](https://github.com/OliverSpeir/astro-starter) template which is unstyled
+- Based on [astro-starter](https://github.com/OliverSpeir/astro-starter)
+
+## TO DO
+
+- Try [Keystatic MDX](https://keystatic.com/docs/fields/mdx)
